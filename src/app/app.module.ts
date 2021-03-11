@@ -27,6 +27,7 @@ import { Router } from '@angular/router';
 import { RecognitionGuard } from './recognition.guard';
 import { CarneComponent } from './carne/carne.component';
 import { BranzaComponent } from './branza/branza.component';
+import { FoameComponent } from './foame/foame.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { BranzaComponent } from './branza/branza.component';
     MarComponent,
     CarneComponent,
     BranzaComponent,
+    FoameComponent,
     SeteComponent,
     MedicComponent,
     FebraComponent

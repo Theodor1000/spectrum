@@ -15,6 +15,7 @@ import { ObiecteComponent } from './obiecte/obiecte.component';
 import { SeteComponent } from './sete/sete.component';
 import { RecognitionGuard } from './recognition.guard';
 import { BranzaComponent } from './branza/branza.component';
+import { FoameComponent } from './foame/foame.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,9 @@ const routes: Routes = [
   },
   {
     'path': 'sete', 'component': SeteComponent, canActivate: [RecognitionGuard]
+  },
+  {
+    'path': 'foame', 'component': FoameComponent, canActivate: [RecognitionGuard]
   },
   {
     'path': 'medic', 'component': MedicComponent, canActivate: [RecognitionGuard]
