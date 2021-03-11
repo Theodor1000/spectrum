@@ -28,6 +28,7 @@ import { RecognitionGuard } from './recognition.guard';
 import { CarneComponent } from './carne/carne.component';
 import { BranzaComponent } from './branza/branza.component';
 import { PizzaComponent } from './pizza/pizza.component';
+import { FoameComponent } from './foame/foame.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { PizzaComponent } from './pizza/pizza.component';
     MarComponent,
     CarneComponent,
     BranzaComponent,
+    FoameComponent,
     SeteComponent,
     MedicComponent,
     FebraComponent,
