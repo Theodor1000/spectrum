@@ -14,6 +14,7 @@ import { MeniuCartonaseComponent } from './meniu-cartonase/meniu-cartonase.compo
 import { ObiecteComponent } from './obiecte/obiecte.component';
 import { SeteComponent } from './sete/sete.component';
 import { RecognitionGuard } from './recognition.guard';
+import { BranzaComponent } from './branza/branza.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,9 @@ const routes: Routes = [
   },
   {
     'path': 'carne', 'component': CarneComponent, canActivate: [RecognitionGuard]
+  },
+  {
+    'path': 'branza', 'component': BranzaComponent, canActivate: [RecognitionGuard]
   },
   {
     'path': 'sete', 'component': SeteComponent, canActivate: [RecognitionGuard]

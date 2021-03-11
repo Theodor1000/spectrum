@@ -26,6 +26,7 @@ import { FebraComponent } from './febra/febra.component';
 import { Router } from '@angular/router';
 import { RecognitionGuard } from './recognition.guard';
 import { CarneComponent } from './carne/carne.component';
+import { BranzaComponent } from './branza/branza.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { CarneComponent } from './carne/carne.component';
     MancareComponent,
     MarComponent,
     CarneComponent,
+    BranzaComponent,
     SeteComponent,
     MedicComponent,
     FebraComponent
