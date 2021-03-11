@@ -15,6 +15,7 @@ import { ObiecteComponent } from './obiecte/obiecte.component';
 import { SeteComponent } from './sete/sete.component';
 import { RecognitionGuard } from './recognition.guard';
 import { BranzaComponent } from './branza/branza.component';
+import { PizzaComponent } from './pizza/pizza.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,9 @@ const routes: Routes = [
   },
   {
     'path': 'febra', 'component': FebraComponent, canActivate: [RecognitionGuard]
+  },
+  {
+    'path': 'pizza', 'component': PizzaComponent, canActivate: [RecognitionGuard]
   },
   {
     'path': '**', 'component': LoadingComponent, canActivate: [RecognitionGuard]
