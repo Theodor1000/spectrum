@@ -8,19 +8,16 @@ import { HomeComponent } from './home/home.component';
 import { LoadingComponent } from './loading/loading.component';
 import { MancareComponent } from './mancare/mancare.component';
 import { MarComponent } from './mar/mar.component';
+import { CarneComponent } from './carne/carne.component'
 import { MedicComponent } from './medic/medic.component';
 import { MeniuCartonaseComponent } from './meniu-cartonase/meniu-cartonase.component';
 import { ObiecteComponent } from './obiecte/obiecte.component';
 import { SeteComponent } from './sete/sete.component';
 import { RecognitionGuard } from './recognition.guard';
-import { NewHomeComponent } from './newHome/newHome';
 
 const routes: Routes = [
   {
     'path': 'cartonase', 'component': MeniuCartonaseComponent, canActivate: [RecognitionGuard]
-  },
-  {
-    'path': 'newHome', 'component': NewHomeComponent, canActivate: [RecognitionGuard]
   },
   {
     'path': 'home', 'component': HomeComponent, canActivate: [RecognitionGuard]
@@ -42,6 +39,9 @@ const routes: Routes = [
   },
   {
     'path': 'mar', 'component': MarComponent, canActivate: [RecognitionGuard]
+  },
+  {
+    'path': 'carne', 'component': CarneComponent, canActivate: [RecognitionGuard]
   },
   {
     'path': 'sete', 'component': SeteComponent, canActivate: [RecognitionGuard]

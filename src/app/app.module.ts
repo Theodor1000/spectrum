@@ -15,16 +15,17 @@ import { CategoriiComponent } from './categorii/categorii.component';
 import { ObiecteComponent } from './obiecte/obiecte.component';
 import { MancareComponent } from './mancare/mancare.component';
 
-import {HttpClientModule} from '@angular/common/http';
-import {MatNativeDateModule} from '@angular/material/core';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
+import { HttpClientModule } from '@angular/common/http';
+import { MatNativeDateModule } from '@angular/material/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { MarComponent } from './mar/mar.component';
 import { SeteComponent } from './sete/sete.component';
 import { MedicComponent } from './medic/medic.component';
 import { FebraComponent } from './febra/febra.component';
 import { Router } from '@angular/router';
 import { RecognitionGuard } from './recognition.guard';
+import { CarneComponent } from './carne/carne.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { RecognitionGuard } from './recognition.guard';
     ObiecteComponent,
     MancareComponent,
     MarComponent,
+    CarneComponent,
     SeteComponent,
     MedicComponent,
     FebraComponent
@@ -51,8 +53,8 @@ import { RecognitionGuard } from './recognition.guard';
     HttpClientModule,
     MatNativeDateModule,
     ReactiveFormsModule
-    
-    
+
+
   ],
   entryComponents: [AppComponent],
   providers: [
