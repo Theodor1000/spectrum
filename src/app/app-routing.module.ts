@@ -13,10 +13,14 @@ import { MeniuCartonaseComponent } from './meniu-cartonase/meniu-cartonase.compo
 import { ObiecteComponent } from './obiecte/obiecte.component';
 import { SeteComponent } from './sete/sete.component';
 import { RecognitionGuard } from './recognition.guard';
+import { NewHomeComponent } from './newHome/newHome';
 
 const routes: Routes = [
   {
-    'path' : 'cartonase', 'component': MeniuCartonaseComponent, canActivate: [RecognitionGuard]
+    'path': 'cartonase', 'component': MeniuCartonaseComponent, canActivate: [RecognitionGuard]
+  },
+  {
+    'path': 'newHome', 'component': NewHomeComponent, canActivate: [RecognitionGuard]
   },
   {
     'path': 'home', 'component': HomeComponent, canActivate: [RecognitionGuard]
@@ -32,7 +36,7 @@ const routes: Routes = [
   },
   {
     'path': 'asist', 'component': AsistComponent, canActivate: [RecognitionGuard]
-  }, 
+  },
   {
     'path': 'mancare', 'component': MancareComponent, canActivate: [RecognitionGuard]
   },
